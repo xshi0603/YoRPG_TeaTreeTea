@@ -1,16 +1,38 @@
+/* 
+   Team TreeTeaTree: Queenie Xiang, Xing Tao Shi, Kevin Bao 
+   APCS1 pd1
+   HW30 -- Ye Olde Role Playing Game, Expanded
+   2016-11-20
+*/ 
+
 public class Rogue extends Character {
-    public Rogue(String inputName) {
-	super(100, 40, 45, 1.0);
-	name = inputName;
+
+    //Initializes the attributes of the monster by using an overloaded constructor that will take in a string input for the name
+    public Rogue (String InputName) {
+        super(400, 75, 15, 1.75);
+	name = InputName;
     }
-    
-    public void specialize() {
-	defense -= 14;
-	strength += 28;
+    public void specialize () {
+	defense -= 10;
+	strength += 20;
+	i += 1;
     }
 
     public void normalize() {
-	strength = ogStrength;
-	defense = ogDefense;
+	defense += (10 * i);
+	strength -= (20 * i);
+	i = 0;
     }
+    
+    public String about(Character player) {
+	String retString = "";
+	retString +=
+	    "Class: " + player +
+	    "\nHP: " + player.getHP() +
+	    "\nStrength: " + player.getStrength() +
+	    "\nDefense: " + player.getDefense() +
+	    "\nAttack Rating: " + player.getAttackRating();
+	return retString;
+    }
+    
 }

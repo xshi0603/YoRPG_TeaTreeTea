@@ -74,7 +74,7 @@ public class YoRPG
 	s = "\nChoose your class: \n";
 	s += "\t1: Warrior\n";
 	s += "\t2: Mage\n";
-	s += "\t3: Rouge\n";
+	s += "\t3: Rogue\n";
 	s += "\t4: Paladin\n";
 	s += "\t5: Ranger\n";
 	s += "\t16: Dirk Hung the Omni-King\n";
@@ -106,7 +106,7 @@ public class YoRPG
 	    pat = new Mage( name );
 	}
 	if (job == 3) {
-	    pat = new Rouge( name );
+	    pat = new Rogue( name );
 	}
 	if (job == 4) {
 	    pat = new Paladin( name );
