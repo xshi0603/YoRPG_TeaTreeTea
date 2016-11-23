@@ -1,19 +1,25 @@
 /* 
 Team TreeTeaTree: Queenie Xiang, Xing Tao Shi, Kevin Bao 
 APCS1 pd1
-HW30 -- Ye Olde Role Playing Game, Expanded
-2016-11-20
+HW31 -- Ye Olde Role Playing Game, Improved
+2016-11-17
 */ 
 
 public class Monster extends Character {
-   
     //Initializes the attributes of the monster by using a constructor  
     public Monster() {
-	super(250, (int) (Math.random() * 45 + 20), 40, 1.0);
+	super(150, (int) (Math.random() * 45 + 20), 20, 1.0);
     }
 
-    //The damage done is determined by the algorithm:(strength * attackRating) - victim.defense
-     
+    public void specialize() {
+	defense -= 13;
+	strength += 26;
+    }
+
+    public void normalize() {
+	strength = ogStrength;
+	defense = ogDefense;
+    }
 }
 
 	

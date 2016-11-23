@@ -1,20 +1,16 @@
-public class Mage extends Character {
-    public Mage (String inputName) {
-	super (100, 55, 40, 1.2);
+public class Rogue extends Character {
+    public Rogue(String inputName) {
+	super(100, 40, 45, 1.0);
 	name = inputName;
-
     }
-
+    
     public void specialize() {
-	defense -= 12;
-	strength += 24;
+	defense -= 14;
+	strength += 28;
     }
 
     public void normalize() {
 	strength = ogStrength;
 	defense = ogDefense;
     }
-    
 }
-
-

@@ -1,13 +1,12 @@
-public class Mage extends Character {
-    public Mage (String inputName) {
-	super (100, 55, 40, 1.2);
+public class Explorer extends Character {
+    public Explorer (String inputName) {
+	super(100, 46, 36, 1.0);
 	name = inputName;
-
     }
-
+    
     public void specialize() {
-	defense -= 12;
-	strength += 24;
+	defense -= 15;
+	strength += 30;
     }
 
     public void normalize() {
@@ -16,5 +15,3 @@ public class Mage extends Character {
     }
     
 }
-
-

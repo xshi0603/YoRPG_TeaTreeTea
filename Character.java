@@ -1,35 +1,24 @@
-/* 
-   Team TreeTeaTree: Queenie Xiang, Xing Tao Shi, Kevin Bao 
-   APCS1 pd1
-   HW30 -- Ye Olde Role Playing Game, Expanded
-   2016-11-20
-*/ 
-
-public class Character {
+public abstract class Character {
 
     protected String name;
     protected int HP;
     protected int strength;
     protected int defense;
     protected double attackRating;
+    protected int ogStrength;
+    protected int ogDefense; 
 
     public Character (int setHP, int setStrength, int setDefense, double setAttackRating ) {
         HP = setHP;
 	strength = setStrength;
 	defense = setDefense;
+	ogStrength = setStrength;
+	ogDefense = setDefense;
 	attackRating = setAttackRating;
     }
 
-    int i = 0;
     public Boolean isAlive() {
 	return (HP > 0);
-    }
-    public int getHP() {
-	return HP;
-    }
-
-    public int getStrength() {
-	return strength;
     }
 
     public int getDefense() {
@@ -40,13 +29,21 @@ public class Character {
 	return name;
     }
 
-    public double getAttackRating() {
-	return attackRating;
-    }
-
     public int lowerHP (int points) {
  	HP -= points;
 	return HP;
+    }
+
+    public int getHealth() {
+	return HP;
+    }
+
+    public int getStrength() {
+	return strength;
+    }
+
+    public double getAttackRating() {
+	return attackRating;
     }
 
     public int attack (Character victim) {
@@ -61,30 +58,32 @@ public class Character {
 
     }
 
-    public void specialize () {
-	defense -= 10;
-	strength += 20;
-	i += 1;
-    }
+    public abstract void specialize ();
+    //defense -= 10;
+    //strength += 20;
+    
 
-    public void normalize() {
-	defense += (10 * i);
-	strength -= (20 * i);
-	i = 0;
-    }
+    public abstract void normalize(); 
+    //strength = ogStrength;
+    // defense = ogDefense; 
+    
+    
     public String toString() {
 	return this.getClass().getName();
     }
     
     public static String about(Character player) {
-	String retString = "";
-	retString +=
+	String retStr = "";
+	retStr +=
 	    "Class: " + player +
-	    "\nHP: " + player.getHP() +
+	    "\nHP: " + player.getHealth() +
 	    "\nStrength: " + player.getStrength() +
 	    "\nDefense: " + player.getDefense() +
 	    "\nAttack Rating: " + player.getAttackRating();
-	return retString;
+	return retStr;
     }
-}
+	
+       
+    
 
+}
