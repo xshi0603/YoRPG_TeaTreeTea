@@ -77,6 +77,8 @@ public class YoRPG
 	s += "\t3: Rogue\n";
 	s += "\t4: Paladin\n";
 	s += "\t5: Ranger\n";
+	s += "\t6: Explorer\n";
+	s += "\t7: Knight\n";	
 	s += "\t16: Dirk Hung the Omni-King\n";
 	
 	System.out.print( s );
@@ -113,6 +115,12 @@ public class YoRPG
 	}
 	if (job == 5) {
 	    pat = new Ranger( name );
+	}
+	if (job == 6) {
+	    pat = new Explorer( name );
+	}
+	if (job == 7) {
+	    pat = new Knight( name );
 	}
 	if (job == 16) {
 	    pat = new OmniKing( name );
