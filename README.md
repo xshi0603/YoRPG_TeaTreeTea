@@ -1,9 +1,21 @@
 # YoRPG_TeaTreeTea
 YoRPG project APCS1
 
-## YoRPG final Version Details:
+## YoRPG Final Version Details:
 
-### Character - Super Class 
+### Super Class : Character 
 
-Contains subclasses antagonist and protagonist that further divides the roles being called in this game 
+Contains subclasses Hero and Monster that further divides the roles being called in this game. 
+
+#### Sub Class : Hero 
+
+Contains subclasses or roles that classify as protagonists. Protagonists attack the monsters. 
+
+##### Role 1 : Warrior 
+
+blah
+
+#### Sub Class : Monster
+
+Contains subclasses or roles that classify as antagonists. Antagonists attack the heroes. 
 
