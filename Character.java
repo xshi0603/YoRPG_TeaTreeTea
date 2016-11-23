@@ -1,3 +1,10 @@
+/* 
+   Team TreeTeaTree: Queenie Xiang, Xing Tao Shi, Kevin Bao 
+   APCS1 pd1
+   HW30 -- Ye Olde Role Playing Game, Expanded
+   2016-11-20
+*/ 
+
 public abstract class Character {
 
     protected String name;
@@ -5,20 +12,24 @@ public abstract class Character {
     protected int strength;
     protected int defense;
     protected double attackRating;
-    protected int ogStrength;
-    protected int ogDefense; 
 
     public Character (int setHP, int setStrength, int setDefense, double setAttackRating ) {
         HP = setHP;
 	strength = setStrength;
 	defense = setDefense;
-	ogStrength = setStrength;
-	ogDefense = setDefense;
 	attackRating = setAttackRating;
     }
 
+    int i = 0;
     public Boolean isAlive() {
 	return (HP > 0);
+    }
+    public int getHP() {
+	return HP;
+    }
+
+    public int getStrength() {
+	return strength;
     }
 
     public int getDefense() {
@@ -29,21 +40,13 @@ public abstract class Character {
 	return name;
     }
 
+    public double getAttackRating() {
+	return attackRating;
+    }
+
     public int lowerHP (int points) {
  	HP -= points;
 	return HP;
-    }
-
-    public int getHealth() {
-	return HP;
-    }
-
-    public int getStrength() {
-	return strength;
-    }
-
-    public double getAttackRating() {
-	return attackRating;
     }
 
     public int attack (Character victim) {
@@ -58,32 +61,13 @@ public abstract class Character {
 
     }
 
-    public abstract void specialize ();
-    //defense -= 10;
-    //strength += 20;
+    public abstract void specialize();
+    public abstract void normalize();
     
-
-    public abstract void normalize(); 
-    //strength = ogStrength;
-    // defense = ogDefense; 
-    
-    
+    public abstract String about(Character player);  
     public String toString() {
 	return this.getClass().getName();
     }
-    
-    public static String about(Character player) {
-	String retStr = "";
-	retStr +=
-	    "Class: " + player +
-	    "\nHP: " + player.getHealth() +
-	    "\nStrength: " + player.getStrength() +
-	    "\nDefense: " + player.getDefense() +
-	    "\nAttack Rating: " + player.getAttackRating();
-	return retStr;
-    }
-	
-       
-    
 
 }
+
