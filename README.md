@@ -13,19 +13,19 @@ Contains subclasses or roles that classify as protagonists. Protagonists attack 
 
 1. Warrior 
 
-..* blah
+* blah
 
 2. Knight
 
-..* blah
+* blah
 
 3. Mage
 
-..* blah
+* blah
 
 4. Rouge
 
-..* blah
+* blah
 
 #### Sub Class : Monster
 
