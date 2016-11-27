@@ -5,12 +5,12 @@
    2016-11-20
 */ 
 
-public class Paladin extends Character {
+public class Paladin extends Monster {
 
-    //Initializes the attributes of the monster by using an overloaded constructor that will take in a string input for the name
-    public Paladin (String InputName) {
-        super(750, 50, 100, 1.0);
-	name = InputName;
+    //Initializes the attributes of the monster by using a default constructor that calls the constructor in Monster 
+    public Paladin () {
+        super(750, 50, 100, 1.0, 1000);
+	name = "Monster Paladin";
     }
     public void specialize () {
 	defense -= 10;
@@ -31,7 +31,8 @@ public class Paladin extends Character {
 	    "\nHP: " + player.getHP() +
 	    "\nStrength: " + player.getStrength() +
 	    "\nDefense: " + player.getDefense() +
-	    "\nAttack Rating: " + player.getAttackRating();
+	    "\nAttack Rating: " + player.getAttackRating() +
+	    "\nExperience: " + player.getEXP() ;
 	return retString;
     }
     

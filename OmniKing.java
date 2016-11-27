@@ -5,12 +5,12 @@
    2016-11-20
 */ 
 
-public class OmniKing extends Character {
+public class OmniKing extends Monster {
 
-    //Initializes the attributes of the monster by using an overloaded constructor that will take in a string input for the name
-    public OmniKing (String InputName) {
-        super(999999, 999999, 999999, 999999);
-	name = InputName;
+     //Initializes the attributes of the monster by using a default constructor that will call the constructor in class Monster 
+    public OmniKing () {
+        super(999999, 999999, 999999, 999999, 999999);
+	name = "Monster OmniKing";
     }
     public void specialize () {
 	defense -= 10;
@@ -31,7 +31,8 @@ public class OmniKing extends Character {
 	    "\nHP: " + player.getHP() +
 	    "\nStrength: " + player.getStrength() +
 	    "\nDefense: " + player.getDefense() +
-	    "\nAttack Rating: " + player.getAttackRating();
+	    "\nAttack Rating: " + player.getAttackRating() +
+	    "\nExperience: " + player.getEXP() ;
 	return retString;
     }
     

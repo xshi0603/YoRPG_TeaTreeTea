@@ -19,9 +19,9 @@ public class YoRPG
     //change this constant to set number of encounters in a game
     public final static int MAX_ENCOUNTERS = 10;
 
-    //each round, a Warrior and a Monster will be instantiated...
+    //each round, a Hero and a Monster will be instantiated...
     private Character pat;   //Is it man or woman?
-    private Monster smaug; //Friendly generic monster name?
+    private Character smaug; //Friendly generic monster name?
 
     private int moveCount;
     private boolean gameOver;
@@ -75,11 +75,8 @@ public class YoRPG
 	s += "\t1: Warrior\n";
 	s += "\t2: Mage\n";
 	s += "\t3: Rogue\n";
-	s += "\t4: Paladin\n";
-	s += "\t5: Ranger\n";
-	s += "\t6: Explorer\n";
-	s += "\t7: Knight\n";	
-	s += "\t16: Dirk Hung the Omni-King\n";
+	s += "\t4: Explorer\n";
+	s += "\t5: Knight\n";	
 	
 	System.out.print( s );
 
@@ -87,10 +84,6 @@ public class YoRPG
 	    job = Integer.parseInt( in.readLine() );
 	}
 	catch ( IOException e ) { }
-
-
-	
-
 
 	s = "Intrepid warrior, what doth thy call thyself? (State your name): ";
 	System.out.print( s );
@@ -111,21 +104,15 @@ public class YoRPG
 	    pat = new Rogue( name );
 	}
 	if (job == 4) {
-	    pat = new Paladin( name );
-	}
-	if (job == 5) {
-	    pat = new Ranger( name );
-	}
-	if (job == 6) {
 	    pat = new Explorer( name );
 	}
-	if (job == 7) {
+	if (job == 5) {
 	    pat = new Knight( name );
 	}
-	if (job == 16) {
-	    pat = new OmniKing( name );
-	}
+
 	System.out.println("\n" + pat.about(pat) + "\n");
+
+	
 
 
     }//end newGame()
@@ -147,7 +134,19 @@ public class YoRPG
 	else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
 
-	    smaug = new Monster();
+	    double temp = Math.random();
+
+	    if ( temp < 0.7 ) {
+		if ( temp < 0.4 ) {
+		    smaug = new Slime();
+		}
+		smaug = new Ranger();
+	    }
+
+	    else {
+		smaug = new Paladin();
+	    }
+	    
 	    System.out.print("\n" + smaug.about(smaug) + "\n");
 
 	    while( smaug.isAlive() && pat.isAlive() ) {
@@ -193,7 +192,17 @@ public class YoRPG
 	    }
 	    //option 2: you slay the beast
 	    else if ( !smaug.isAlive() ) {
+		double num = smaug.getEXP;
+		pat.gainEXP( smaug.getEXP() );
 		System.out.println( "HuzzaaH! Ye olde monster hath been slain!" );
+		System.out.println( "You have gained: " + smaug.getEXP() + " EXP" );
+		if ( pat.levelUP() ) {
+		    pat.gainLVL();
+		    System.out.println (
+					"Congratulations, you have leveled up! You are now level " +
+					pat.getLVL() ); 
+		}
+		
 		return true;
 	    }
 	    //option 3: the beast slays you

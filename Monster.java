@@ -5,36 +5,22 @@ HW30 -- Ye Olde Role Playing Game, Expanded
 2016-11-20
 */ 
 
-public class Monster extends Character {
-   
+public abstract class Monster extends Character {
+    
     //Initializes the attributes of the monster by using a constructor  
-    public Monster() {
-	super(250, (int) (Math.random() * 45 + 20), 40, 1.0);
-    }
-    public void specialize () {
-	defense -= 10;
-	strength += 20;
-	i += 1;
+    public Monster(int setHP, int setStrength, int setDefense, double setAttackRating, double setEXP) {
+	HP = setHP;
+	strength = setStrength;
+	defense = setDefense;
+	attackRating = setAttackRating;
+	EXP = setEXP;
+
     }
 
-    public void normalize() {
-	defense += (10 * i);
-	strength -= (20 * i);
-	i = 0;
-    }
-    
-    public String about(Character player) {
-	String retString = "";
-	retString +=
-	    "Class: " + player +
-	    "\nHP: " + player.getHP() +
-	    "\nStrength: " + player.getStrength() +
-	    "\nDefense: " + player.getDefense() +
-	    "\nAttack Rating: " + player.getAttackRating();
-	return retString;
+     public double getEXP() {
+	return EXP;
     }
    
-     
 }
 
 	

@@ -5,11 +5,11 @@
    2016-11-20
 */ 
 
-public class Knight extends Character {
+public class Knight extends Hero {
 
-    //Initializes the attributes of the monster by using an overloaded constructor that will take in a string input for the name
+     //Initializes the attributes of Hero Class by using an overloaded constructor that will take in a string input for the name
     public Knight (String InputName) {
-        super(425, 110, 70, 0.9);
+        super(425, 110, 70, 0.9, 100.0, 1);
 	name = InputName;
     }
     public void specialize () {
@@ -31,7 +31,9 @@ public class Knight extends Character {
 	    "\nHP: " + player.getHP() +
 	    "\nStrength: " + player.getStrength() +
 	    "\nDefense: " + player.getDefense() +
-	    "\nAttack Rating: " + player.getAttackRating();
+	    "\nAttack Rating: " + player.getAttackRating() +
+	    "\nLevel: " + player.getLVL() +
+	    "\nExperience: " + player.getEXP() ;
 	return retString;
     }
     

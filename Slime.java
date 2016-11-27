@@ -5,12 +5,12 @@
    2016-11-20
 */ 
 
-public class Ranger extends Monster {
+public class Slime extends Monster {
 
-    //Initializes the attributes of the monster by using a default constructor onstructor that will call the constructor in class Monster
-    public Ranger () {
-        super(350, 60, 10, 3.0, ( (Math.random() * 50) + 100 ) );
-	name = "Monster Ranger";
+    //Initializes the attributes of the monster by using a default constructor that will call the constructor in class Monster 
+    public Slime () {
+        super(150, 60, 10, 3.0, ( (Math.random() * 50) + 100 ) );
+	name = "Monster Slime";
     }
     public void specialize () {
 	defense -= 10;

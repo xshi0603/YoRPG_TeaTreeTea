@@ -5,11 +5,11 @@
    2016-11-20
 */ 
 
-public class Explorer extends Character {
+public class Explorer extends Hero {
 
-    //Initializes the attributes of the monster by using an overloaded constructor that will take in a string input for the name
+     //Initializes the attributes of Hero Class by using an overloaded constructor that will take in a string input for the name
     public Explorer (String InputName) {
-        super(600, 80, 50, 1.1);
+        super(600, 80, 50, 1.1, 100.0, 1);
 	name = InputName;
     }
     public void specialize () {
@@ -31,7 +31,9 @@ public class Explorer extends Character {
 	    "\nHP: " + player.getHP() +
 	    "\nStrength: " + player.getStrength() +
 	    "\nDefense: " + player.getDefense() +
-	    "\nAttack Rating: " + player.getAttackRating();
+	    "\nAttack Rating: " + player.getAttackRating() +
+	    "\nLevel: " + player.getLVL() +
+	    "\nExperience: " + player.getEXP() ;
 	return retString;
     }
     
