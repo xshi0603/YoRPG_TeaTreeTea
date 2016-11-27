@@ -5,7 +5,31 @@ YoRPG project APCS1
 
 ### Super Class : Character 
 
-Contains subclasses Hero and Monster that further divides the roles being called in this game. 
+Contains subclasses Hero and Monster that further divides the roles being called in this game.
+
+All characters inherit these attributes, although not all attributes will be set. For example, Monsters do not a level.
+    * protected String name;
+    * protected int HP;
+    * protected int strength;
+    * protected int defense;
+    * protected double attackRating;
+    * protected double EXP;
+    * protected int LVL;
+
+All characters inherit these methods, although not all methods will be used. For example, Monsters will not use getLVL().
+    * Boolean isAlive()
+    * int getHP()
+    * int getStrength()
+    * int getDefense()
+    * String getName()
+    * double getEXP()
+    * double getAttackRating()
+    * int lowerHP()
+    * double getLVL()
+    * int attack
+    * abstract void specialize()
+    * abstract void normalize() 
+
 
 #### Sub Class : Hero 
 
