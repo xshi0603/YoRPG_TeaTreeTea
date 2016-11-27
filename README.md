@@ -35,3 +35,9 @@ Contains subclasses or roles that classify as protagonists. Protagonists attack 
 
 Contains subclasses or roles that classify as antagonists. Antagonists attack the heroes. Monsters have exp which they give to the heroes when defeated.
 
+1. Paladin
+
+2. Ranger
+
+3. Slime
+
