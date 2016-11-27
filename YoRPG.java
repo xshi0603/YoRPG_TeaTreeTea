@@ -76,7 +76,8 @@ public class YoRPG
 	s += "\t2: Mage\n";
 	s += "\t3: Rogue\n";
 	s += "\t4: Explorer\n";
-	s += "\t5: Knight\n";	
+	s += "\t5: Knight\n";
+	s += "Selection: ";
 	
 	System.out.print( s );
 
