@@ -13,21 +13,21 @@ Contains subclasses or roles that classify as protagonists. Protagonists attack 
 
 1. Warrior 
 
-* blah
+* have the most health
 
 2. Knight
 
-* blah
+* have the highest defense
 
 3. Mage
 
-* blah
+* has high attackscaling
 
 4. Rouge
 
-* blah
+* low health but has the highest attack scaling
 
 #### Sub Class : Monster
 
-Contains subclasses or roles that classify as antagonists. Antagonists attack the heroes. 
+Contains subclasses or roles that classify as antagonists. Antagonists attack the heroes. Monsters have exp which they give to the heroes when defeated.
 
