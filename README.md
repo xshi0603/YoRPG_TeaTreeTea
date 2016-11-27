@@ -7,7 +7,8 @@ YoRPG project APCS1
 
 Contains subclasses Hero and Monster that further divides the roles being called in this game.
 
-All characters inherit these attributes, although not all attributes will be set. For example, Monsters do not a level.
+All characters inherit these attributes, although not all attributes will be set. For example, Monsters do not have a level.
+
     * protected String name;
     * protected int HP;
     * protected int strength;
@@ -17,6 +18,7 @@ All characters inherit these attributes, although not all attributes will be set
     * protected int LVL;
 
 All characters inherit these methods, although not all methods will be used. For example, Monsters will not use getLVL().
+
     * Boolean isAlive()
     * int getHP()
     * int getStrength()
