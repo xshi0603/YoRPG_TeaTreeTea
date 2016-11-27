@@ -204,7 +204,6 @@ public class YoRPG
 		}
 		
 		return true;
-		System.out.println("\n" + pat.about(pat) + "\n";)
 	    }
 	    //option 3: the beast slays you
 	    else if ( !pat.isAlive() ) {

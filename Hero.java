@@ -36,7 +36,6 @@ public abstract class Hero extends Character {
 	if (counter < LVL) {
 	    strength += (int) ( (Math.random() * 5) + 10 );
 	    defense += (int) ( (Math.random() * 5) + 5 );
-	    System.out.println("\n" + pat.about(pat) + "\n");
 	}
 	
     }
