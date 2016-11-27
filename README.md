@@ -37,9 +37,12 @@ Contains subclasses or roles that classify as antagonists. Antagonists attack th
 
 1. Paladin
 
-   herp
+   * has bunches of health and gives tons of exp
    
 2. Ranger
 
+   * gives a moderate amount of exp and is moderately dangerous
+
 3. Slime
 
+   * gives a moderate amount of exp and is moderately dangerous
