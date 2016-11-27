@@ -9,9 +9,21 @@ Contains subclasses Hero and Monster that further divides the roles being called
 
 #### Sub Class : Hero 
 
-Contains subclasses or roles that classify as protagonists. Protagonists attack the monsters. 
+Contains subclasses or roles that classify as protagonists. Protagonists attack the monsters. Heros can level up and gain additional defense and damage.
 
-1. Role 1 : Warrior 
+1. Warrior 
+
+blah
+
+2. Knight
+
+blah
+
+3. Mage
+
+blah
+
+4. Rouge
 
 blah
 
