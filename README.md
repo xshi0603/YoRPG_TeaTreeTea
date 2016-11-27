@@ -13,23 +13,23 @@ Contains subclasses or roles that classify as protagonists. Protagonists attack 
 
 1. Warrior 
 
-* has average stats
+   * has average stats
 
 2. Knight
 
-* has the highest defense
+   * has the highest defense
 
 3. Mage
 
-* has high attackscaling
+   * has high attackscaling
 
 4. Rouge
 
-* low health but has the highest attack scaling
+   * low health but has the highest attack scaling
 
 5. Explorer
 
-* has the highest health
+   * has the highest health
 
 #### Sub Class : Monster
 
