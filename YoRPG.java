@@ -192,18 +192,19 @@ public class YoRPG
 	    }
 	    //option 2: you slay the beast
 	    else if ( !smaug.isAlive() ) {
-		double num = smaug.getEXP;
-		pat.gainEXP( smaug.getEXP() );
+		double num = ((Monster)smaug).getEXP();
+		((Hero)pat).gainEXP(((Monster)smaug).getEXP());
 		System.out.println( "HuzzaaH! Ye olde monster hath been slain!" );
 		System.out.println( "You have gained: " + smaug.getEXP() + " EXP" );
-		if ( pat.levelUP() ) {
-		    pat.gainLVL();
+		if (((Hero)pat).lvlUP()) {
+		    ((Hero)pat).gainLVL();
 		    System.out.println (
 					"Congratulations, you have leveled up! You are now level " +
-					pat.getLVL() ); 
+					pat.getLVL() );
 		}
 		
 		return true;
+		System.out.println("\n" + pat.about(pat) + "\n";)
 	    }
 	    //option 3: the beast slays you
 	    else if ( !pat.isAlive() ) {

@@ -9,7 +9,7 @@ public class Warrior extends Hero{
 
     //Initializes the attributes of the monster by using an overloaded constructor that will take in a string input for the name
     public Warrior (String InputName) {
-        super(500, 100, 50, 1.25, 100.0, 1);
+        super(500, 100, 50, 1.25, 0, 1);
 	name = InputName;
     }
     public void specialize () {
