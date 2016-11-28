@@ -9,7 +9,7 @@ public class Ranger extends Monster {
 
     //Initializes the attributes of the monster by using a default constructor onstructor that will call the constructor in class Monster
     public Ranger () {
-        super(350, 60, 10, 3.0, ( (Math.random() * 50) + 100 ) );
+        super(200, 25, 10, 3.0, ( (Math.random() * 50) + 100 ) );
 	name = "Monster Ranger";
     }
     public void specialize () {
@@ -27,7 +27,7 @@ public class Ranger extends Monster {
     public String about(Character player) {
 	String retString = "";
 	retString +=
-	    "Class: " + player +
+	    "Monster: " + player +
 	    "\nHP: " + player.getHP() +
 	    "\nStrength: " + player.getStrength() +
 	    "\nDefense: " + player.getDefense() +

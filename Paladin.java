@@ -9,7 +9,7 @@ public class Paladin extends Monster {
 
     //Initializes the attributes of the monster by using a default constructor that calls the constructor in Monster 
     public Paladin () {
-        super(750, 50, 100, 1.0, 1000);
+        super(300, 15, 50, 1.5, 1000);
 	name = "Monster Paladin";
     }
     public void specialize () {
@@ -27,7 +27,7 @@ public class Paladin extends Monster {
     public String about(Character player) {
 	String retString = "";
 	retString +=
-	    "Class: " + player +
+	    "Monster: " + player +
 	    "\nHP: " + player.getHP() +
 	    "\nStrength: " + player.getStrength() +
 	    "\nDefense: " + player.getDefense() +

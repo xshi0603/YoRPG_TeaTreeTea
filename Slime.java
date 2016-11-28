@@ -9,7 +9,7 @@ public class Slime extends Monster {
 
     //Initializes the attributes of the monster by using a default constructor that will call the constructor in class Monster 
     public Slime () {
-        super(150, 60, 10, 3.0, ( (Math.random() * 50) + 100 ) );
+        super(150, 50, 0, 1.0, ( (Math.random() * 50) + 100 ) );
 	name = "Monster Slime";
     }
     public void specialize () {
@@ -27,7 +27,7 @@ public class Slime extends Monster {
     public String about(Character player) {
 	String retString = "";
 	retString +=
-	    "Class: " + player +
+	    "Monster: " + player +
 	    "\nHP: " + player.getHP() +
 	    "\nStrength: " + player.getStrength() +
 	    "\nDefense: " + player.getDefense() +
