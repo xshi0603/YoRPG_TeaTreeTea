@@ -73,18 +73,18 @@ Contains subclasses or roles that classify as antagonists. Antagonists attack th
 
    * gives a moderate amount of exp and is moderately dangerous
 
-##### Future Additions
+#### Future Additions
 
-    * Add usable items to the game (potions, armor, weapons)
-    * Add currency system and shops where currency can be exchanged for items
-    * Add different abilities for different classes
-    * Add random events that can either help or harm the player
+   * Add usable items to the game (potions, armor, weapons)
+   * Add currency system and shops where currency can be exchanged for items
+   * Add different abilities for different classes
+   * Add random events that can either help or harm the player
 
-###### How To Play
+#### How To Play
 
-    1. Type in cmd "javac YoRPG.java" + enter.
-    2. Type in cmd "java YoRPG" + enter.
-    3. Choose a difficulty by typing 1,2,or 3 + enter.
-    4. Choose a class to play by typing 1,2,3,4,or 5 + enter.
-    5. Type in your name + enter.
-    6. When a monster is encountered, type "1" to attack with normal stats or type "2" to attack with increased strength and decreased defense.
+1. Type in cmd "javac YoRPG.java" + enter.
+2. Type in cmd "java YoRPG" + enter.
+3. Choose a difficulty by typing 1,2,or 3 + enter.
+4. Choose a class to play by typing 1,2,3,4,or 5 + enter.
+5. Type in your name + enter.
+6. When a monster is encountered, type "1" to attack with normal stats or type "2" to attack with increased strength and decreased defense.
